@@ -5,13 +5,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>william-spada dev</title>
+        <title>William Spada | Desenvolvedor Front-end</title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
         </style>
         <link rel="stylesheet" href="./src/styles/global.css">
         <link rel="stylesheet" href="./src/styles/header.css">
         <link rel="stylesheet" href="./src/styles/apresentation.css">
+        <link rel="stylesheet" href="./src/styles/aboutMe.css">
     </head>
     <body>
         <header class="header__container">
@@ -31,13 +32,13 @@
             </section>
             <section class="aboutMe__container">
                 <h2 class="aboutMe__title">Sobre mim</h2>
+                <img class="aboutMe__image" src="./src/assets/williamDev.jpg" alt="Imagem da minha pessoa para me apresentar ao leitor">
                 <div class="aboutMe__content">
-                    <img src="" alt="Imagem da minha pessoa para me apresentar ao leitor">
-                    <p>Meu nome é William Rodrigues Spada, moro na cidade de Bragança Paulista e tenho 19 anos. 
+                    <p class="aboutMe__text">Meu nome é William Rodrigues Spada, moro na cidade de Bragança Paulista e tenho 19 anos. 
                         Atualmente estou cursando Engenharia da Computação.</p>
-                    <p>Tenho conhecimento na stack front-end com ReactJS e TypeScript e também tenho um básico conhecimento de back-end,
+                    <p class="aboutMe__text">Possuo conhecimento na stack front-end com ReactJS e TypeScript e também um básico conhecimento de back-end,
                          criando implementações de rotas com express framework e CRUD com mongoDB utilizando o ORM "mongoose".</p>
-                    <button></button>
+                    <button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" alt="Icone de fazer download"></button>
                 </div>
             </section>
         </main>

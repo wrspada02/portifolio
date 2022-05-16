@@ -11,6 +11,8 @@
         --colorTextDetailTitle: #9429db;
         --colorBackgroundGradientTextOne: #ca1212;
         --colorBackgroundGradientTextTwo: #2215d6;
+        --colorBackgroundGradientSubtitleOne: #8907a3;
+        --colorBackgroundGradientSubtitleTwo: #0013c0;
     }
 
     html{
@@ -30,4 +32,11 @@
         font-weight: 300;
         padding : 0 3%;
         background-color: var(--colorBackgroundWhiteModeView);
+    }
+
+    button{
+        padding: 1em 2em;
+        border-radius: 0.25em;
+        border: 0.1em solid var(--colorTextDetailTitle);
+        cursor: pointer;
     }

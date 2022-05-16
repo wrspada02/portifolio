@@ -1,0 +1,39 @@
+
+    .aboutMe__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .aboutMe__title{
+        margin: 1rem 0;
+        background-image: linear-gradient(to left, var(--colorBackgroundGradientSubtitleOne), var(--colorBackgroundGradientSubtitleTwo));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .aboutMe__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutMe__image{
+        width: 60%;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+    }
+
+    .aboutMe__text{
+        margin: 1rem 0;
+        font-weight: 400;
+    }
+
+    .aboutMe__button{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+    }
