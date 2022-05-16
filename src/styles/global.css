@@ -1,0 +1,33 @@
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    :root{
+        --colorBackgroundWhiteModeView: #F1F1F1;
+        --colorBackgroundBlackModeView: #0A0119;
+        --colorTextDetailTitle: #9429db;
+        --colorBackgroundGradientTextOne: #ca1212;
+        --colorBackgroundGradientTextTwo: #2215d6;
+    }
+
+    html{
+        @media (max-width: 720px){
+            font-size: 87.5%;
+        }
+    }
+
+    html{
+        @media (max-width: 1080px){
+            font-size: 93.75%;
+        }
+    }
+
+    body{
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        padding : 0 3%;
+        background-color: var(--colorBackgroundWhiteModeView);
+    }

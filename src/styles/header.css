@@ -1,0 +1,17 @@
+
+    .header__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+
+    .header__title--detail{
+        color: var(--colorTextDetailTitle);
+    }
+
+    .header__button{
+        background-color: blueviolet;
+        border-radius: 50%;
+        padding: 0.25rem;
+    }
