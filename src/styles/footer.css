@@ -1,0 +1,19 @@
+
+    .footer__container{
+        padding: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2em 0;
+        background-color: var(--colorTextDetailTitle);
+    }
+
+    .footer__title{
+        margin-left: 0.5em;
+    }
+
+    .footer__image{
+        width: 1em;
+        background-color: var(--colorBackgroundWhiteModeView);
+        border-radius: 50%;
+    }

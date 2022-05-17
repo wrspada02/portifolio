@@ -1,8 +1,9 @@
 
     .projects__container{
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 
     .projects__cards{
@@ -10,9 +11,33 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding: 1rem 0;
+        border-radius: 1em;
+        box-shadow: 0.1em 0.1em black;
+        margin: 1rem 0.5em;
+        background-color: var(--colorBackgroundCardsTechnologies);
+        cursor: pointer;
+    }
+
+    .projects__cards--image{
+        border-radius: 0.5em;
+        width: 95%;
+        max-width: 300px;
     }
 
     .projects__cards--title{
-        margin: 0.5em 0;
+        margin: 1.5em 0;
+        font-weight: 500;
+    }
+
+    .projects__styles--title{
+        padding: 0.5rem 0.25rem;
+        border-radius: 10%;
+        border: 0.1rem solid var(--colorTextDetailTitle);
         font-weight: 400;
+    }
+
+    .projects__cards--github{
+        margin-top: 1.5em;
+        width: 150%;
     }

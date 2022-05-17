@@ -1,5 +1,6 @@
 
     .header__container{
+        padding : 0 3%;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -10,8 +11,47 @@
         color: var(--colorTextDetailTitle);
     }
 
+    .header__itens{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     .header__button{
         background-color: blueviolet;
         border-radius: 50%;
         padding: 0.25rem;
+        margin-left: 1em;
+    }
+
+    .header__container--desktop{
+        display: none;
+    }
+
+    @media screen and (min-width: 720px){
+        .header__container{
+            display: none;
+        }
+
+        .header__container--desktop{
+            padding : 0 3%;
+            margin: 1em 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header__itens--list{
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+        .header__itens--list__itens{
+            margin: 0 1.2em;
+            font-weight: 600;
+            color: var(--colorTextDetailTitle);
+            cursor: pointer;
+        }
+
     }

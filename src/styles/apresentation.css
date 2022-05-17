@@ -45,4 +45,28 @@
             width: 50%;
             margin-left: 1em;
         }
+    
+        @media screen and (min-width: 950px){
+            .apresentation__photo{
+                width: 45%;
+            }
+        }
+    
+        @media screen and (min-width: 1200px){
+
+            .apresentation__title, .apresentation__subtitle{
+                font-size: 2em;
+            }
+
+            .apresentation__subtitle--welcome, .apresentation__littleAboutMe{
+                font-size: 1.2em;
+            }
+
+            .apresentation__photo{
+                width: 30%;
+            }
+
+            
+        }
+        
     }

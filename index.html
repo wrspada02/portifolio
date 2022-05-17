@@ -15,13 +15,30 @@
         <link rel="stylesheet" href="./src/styles/aboutMe.css">
         <link rel="stylesheet" href="./src/styles/technologies.css">
         <link rel="stylesheet" href="./src/styles/projects.css">
+        <link rel="stylesheet" href="./src/styles/contact.css">
+        <link rel="stylesheet" href="./src/styles/footer.css">
     </head>
     <body>
         <header class="header__container">
             <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
-            <img class="header__button" src="./src/assets/menu.svg" alt="Botao hamburguer">
+            <div class="header__itens">
+                <img src="./src/assets/moon.svg" alt="Imagem da lua para exibicao do modo escuro">
+                <img class="header__button" src="./src/assets/menu.svg" alt="Botao hamburguer">
+            </div>
         </header>
-        <main>
+        <header class="header__container--desktop">
+            <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
+            <nav class="header__itens">
+                <ul class="header__itens--list">
+                    <li class="header__itens--list__itens">Sobre</li>
+                    <li class="header__itens--list__itens">Tecnologias</li>
+                    <li class="header__itens--list__itens">Projetos</li>
+                    <li class="header__itens--list__itens">Contato</li>
+                    <li class="header__itens--list__itens"><img src="./src/assets/moon.svg" alt=""></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main__content">
             <section class="apresentation__container">
                 <div class="apresentation__content">
                     <h1 class="apresentation__title">Olá, eu sou<br> William Spada.</h1>
@@ -86,12 +103,109 @@
                     <span class="technologies__cards--title">Mongo DB</span>
                 </article>
             </section>
+            <h2 class="subtitle">Projetos</h2>
             <section class="projects__container">
                 <article class="projects__cards">
-                    <img class="projects__cards--image" src="" alt="Imagem representando o projeto ">
-                    <span class="projects__cards--title"></span>
+                    <img class="projects__cards--image" src="./src/assets/projects/landingPageBalleBot.jpg" 
+                    alt="Imagem representando o projeto landing page BalleBot">
+                    <span class="projects__cards--title">Landing page BalleBot</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">HTML</span>
+                        <span class="projects__styles--title">CSS</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/landingPageBalleBot"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/RocketCoffee.JPG" 
+                    alt="Imagem representando o projeto rocket coffee">
+                    <span class="projects__cards--title">Landing Page Rocket Coffee</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">HTML</span>
+                        <span class="projects__styles--title">CSS</span>
+                        <span class="projects__styles--title">Javascript</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/RocketCoffee"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/rocketBlog.JPG" 
+                    alt="Imagem representando o projeto rocket blog">
+                    <span class="projects__cards--title">Landing Page Rocket Blog</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">HTML</span>
+                        <span class="projects__styles--title">CSS</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/rocketBlog"><img class="projects__cards--github" src="./src/assets/github.svg"
+                         alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/rocketNFTs.JPG" 
+                    alt="Imagem representando o projeto rocket NFTs">
+                    <span class="projects__cards--title">Landing page Rocket NFTs</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">HTML</span>
+                        <span class="projects__styles--title">CSS</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/rocketNFTs"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/editor-de-codigo.JPG" 
+                    alt="Imagem representando o projeto alura DEV">
+                    <span class="projects__cards--title">Alura DEV</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">HTML</span>
+                        <span class="projects__styles--title">CSS</span>
+                        <span class="projects__styles--title">Javascript</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/editor-de-codigo"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/to-do__list.JPG" 
+                    alt="Imagem representando o projeto to-do list">
+                    <span class="projects__cards--title">To-do list</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">ReactJS</span>
+                        <span class="projects__styles--title">Typescript</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/task_list--Challenge01_Ignite"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+                <article class="projects__cards">
+                    <img class="projects__cards--image" src="./src/assets/projects/rocketshoes.JPG" 
+                    alt="Imagem representando o projeto rocketshoes">
+                    <span class="projects__cards--title">Rocketshoes</span>
+                    <div class="projects__styles">
+                        <span class="projects__styles--title">ReactJS</span>
+                        <span class="projects__styles--title">Typescript</span>
+                    </div>
+                    <a href="https://github.com/wrspada02/rocketshoes"><img class="projects__cards--github" src="./src/assets/github.svg" 
+                        alt="Imagem representando github para acessar o repositorio"></a>
+                </article>
+            </section>
+            <h2 class="subtitle">Contato</h2>
+            <section class="contact__container">
+                <article class="contact__card">
+                    <a href="https://www.linkedin.com/in/william-rodrigues-spada-03b828192/"><img src="./src/assets/linkedin.svg" 
+                        alt="Imagem do logo do linkedin para redirecionar"></a>
+                    <span>Linkedin</span>
+                </article>
+                <article class="contact__card">
+                    <a href="https://github.com/wrspada02"><img src="./src/assets/github.svg" 
+                        alt="Imagem do logo do github para redirecionar"></a>
+                    <span>Github</span>
+                </article>
+                <article class="contact__card">
+                    <img src="./src/assets/whatsapp.svg" alt="Imagem do logo do whatsapp"></a>
+                    <span>Whatsapp</span>
                 </article>
             </section>
         </main>
+        <footer class="footer__container">
+            <img class="footer__image" src="./src/assets/exclamation-lg.svg" alt="Exclamacao de representacao">
+            <h3 class="footer__title">William Spada</h3>
+        </footer>
     </body>
     </html>

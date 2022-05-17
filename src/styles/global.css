@@ -31,8 +31,11 @@
     body{
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
-        padding : 0 3%;
         background-color: var(--colorBackgroundWhiteModeView);
+    }
+
+    .main__content{
+        padding : 0 3%;
     }
 
     button{

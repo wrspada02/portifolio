@@ -56,16 +56,33 @@
             width: 50%;
         }
 
+        .aboutMe__image{
+            width: 40%;
+        }
+
     }
 
     @media screen and (min-width: 950px){
         .aboutMe__button{
             width: 32%;
         }
+
+        .aboutMe__image{
+            width: 30%;
+        }
     }
 
     @media screen and (min-width: 1200px){
         .aboutMe__button{
-            width: 25%;
+            width: 15%;
         }
+
+        .aboutMe__image{
+            width: 20%;
+        }
+
+        .aboutMe__text{
+            font-size: 1.2em;
+        }
+
     }
