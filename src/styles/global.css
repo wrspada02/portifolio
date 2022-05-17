@@ -13,6 +13,7 @@
         --colorBackgroundGradientTextTwo: #2215d6;
         --colorBackgroundGradientSubtitleOne: #8907a3;
         --colorBackgroundGradientSubtitleTwo: #0013c0;
+        --colorBackgroundCardsTechnologies: #DFDFDF;
     }
 
     html{
@@ -39,4 +40,13 @@
         border-radius: 0.25em;
         border: 0.1em solid var(--colorTextDetailTitle);
         cursor: pointer;
+    }
+
+    .subtitle{
+        margin: 1rem 0;
+        background-image: linear-gradient(to left, var(--colorBackgroundGradientSubtitleOne), var(--colorBackgroundGradientSubtitleTwo));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
     }

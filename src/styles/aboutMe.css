@@ -6,14 +6,6 @@
         text-align: center;
     }
 
-    .aboutMe__title{
-        margin: 1rem 0;
-        background-image: linear-gradient(to left, var(--colorBackgroundGradientSubtitleOne), var(--colorBackgroundGradientSubtitleTwo));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
     .aboutMe__content{
         display: flex;
         flex-direction: column;
@@ -36,4 +28,44 @@
         align-items: center;
         justify-content: space-evenly;
         width: 50%;
+    }
+
+    @media screen and (min-width: 400px){
+        .aboutMe__button{
+            width: 40%;
+        }
+    }
+
+    @media screen and (min-width: 550px){
+        .aboutMe__button{
+            width: 28%;
+        }
+    }
+
+    @media screen and (min-width: 720px) {
+        .aboutMe__container{
+            flex-direction: row;
+        }
+
+        .aboutMe__text{
+            text-align: justify;
+            margin-left: 1em;
+        }
+
+        .aboutMe__button{
+            width: 50%;
+        }
+
+    }
+
+    @media screen and (min-width: 950px){
+        .aboutMe__button{
+            width: 32%;
+        }
+    }
+
+    @media screen and (min-width: 1200px){
+        .aboutMe__button{
+            width: 25%;
+        }
     }
