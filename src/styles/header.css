@@ -22,6 +22,14 @@
         border-radius: 50%;
         padding: 0.25rem;
         margin-left: 1em;
+        border: 0.1em solid black;
+    }
+
+    .header__modePage{
+        background-color: yellow;
+        border-radius: 50%;
+        padding: 0.5rem;
+        border: 0.1em solid black;
     }
 
     .header__container--desktop{
@@ -68,7 +76,7 @@
 
     @media screen and (max-width: 1000px){
         .header__title{
-            font-size: 1.5em;
+            font-size: 2em;
         }
     }
 

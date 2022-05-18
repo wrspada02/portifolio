@@ -16,7 +16,7 @@
         padding: 1rem 0;
         border-radius: 1em;
         box-shadow: 0.1em 0.1em black;
-        background-color: var(--colorBackgroundCardsTechnologies);
+        background-color: transparent;
         cursor: pointer;
     }
 

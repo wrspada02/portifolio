@@ -8,11 +8,13 @@
     }
 
     .contact__card{
-        width: 40%;
         margin: 1em 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0.2em 1em;
+        border-radius: 0.3em;
+        background-color: var(--colorBackgroundContactCard);
     }
 
     @media screen and (min-width: 500px){

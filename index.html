@@ -9,6 +9,7 @@
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
         </style>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <link rel="stylesheet" href="./src/styles/global.css">
         <link rel="stylesheet" href="./src/styles/header.css">
         <link rel="stylesheet" href="./src/styles/apresentation.css">
@@ -17,17 +18,18 @@
         <link rel="stylesheet" href="./src/styles/projects.css">
         <link rel="stylesheet" href="./src/styles/contact.css">
         <link rel="stylesheet" href="./src/styles/footer.css">
+        <link rel="stylesheet" href="./src/styles/certificate.css">
     </head>
     <body>
         <header class="header__container">
-            <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
+            <h1 class="header__title" data-titleHeader1><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
             <div class="header__itens">
-                <img src="./src/assets/moon.svg" alt="Imagem da lua para exibicao do modo escuro">
+                <img class="header__modePage" src="./src/assets/moon.svg" alt="Imagem para exibicao do modo da pagina" data-mode1>
                 <img class="header__button" src="./src/assets/menu.svg" alt="Botao hamburguer" data-menuButton>
             </div>
         </header>
         <header class="header__container--desktop">
-            <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
+            <h1 class="header__title" data-titleHeader2><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
             <nav class="header__itens">
                 <ul class="header__itens--list" data-headerList>
                     <li class="header__itens--list__itens">Sobre</li>
@@ -35,7 +37,8 @@
                     <li class="header__itens--list__itens">Tecnologias</li>
                     <li class="header__itens--list__itens">Projetos</li>
                     <li class="header__itens--list__itens">Certificados</li>
-                    <li class="header__itens--list__itens"><img src="./src/assets/moon.svg" alt=""></li>
+                    <li class="header__itens--list__itens"  ><img class="header__modePage" src="./src/assets/moon.svg" 
+                        alt="Imagem para exibicao do modo da pagina"data-mode2></li>
                 </ul>
             </nav>
         </header>
@@ -55,9 +58,10 @@
                     <h2 class="apresentation__subtitle">Desenvolvedor Front-end</h2>
                     <span class="apresentation__subtitle--welcome">Seja bem-vindo(a)</span>
                     <p class="apresentation__littleAboutMe">Sou um desenvolvedor curioso que gosta de entender como as coisas funcionam embaixo dos panos
-                     e desenvolver sistemas que facilitam as vidas das pessoas.</p>
+                     e desenvolver sistemas que facilitam a vida das pessoas.</p>
                 </div>    
-                <img class="apresentation__photo" src="./src/assets/blogging 1.svg" alt="Imagem cartoonizada de ilustracao programador mexendo no computador">
+                <img class="apresentation__photo" src="./src/assets/blogging 1.svg" 
+                alt="Imagem cartoonizada de ilustracao programador mexendo no computador" data-photoApresentation>
             </section>
             <h2 class="subtitle__aboutMe">Sobre mim</h2>
             <section class="aboutMe__container">
@@ -73,7 +77,8 @@
                          criando implementações de rotas com express framework e CRUD com mongoDB utilizando o ORM "mongoose".</p>       
                         </div>
             </section>
-            <a download href="./src/assets/brightness-high.svg"><button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" alt="Icone de fazer download"></button></a>
+            <a download href="./src/assets/brightness-high.svg"><button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" 
+                alt="Icone de fazer download"></button></a>
             <h2 class="subtitle">Contato</h2>
             <section class="contact__container">
                 <article class="contact__card">
@@ -82,7 +87,7 @@
                     <span>Linkedin</span>
                 </article>
                 <article class="contact__card">
-                    <a href="https://github.com/wrspada02"><img src="./src/assets/github.svg" 
+                    <a href="https://github.com/wrspada02"><img class="test__button" src="./src/assets/github.svg" 
                         alt="Imagem do logo do github para redirecionar"></a>
                     <span>Github</span>
                 </article>
@@ -223,13 +228,89 @@
                 </article>
             </section>
             <h2 class="subtitle">Certificados</h2>
-            <section class="certificados__container">
-
+            <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <article class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                </article>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./src/assets/courses/css_grid.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./src/assets/courses/bootstrap.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/css_flexbox.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/css_layouts_responsivos.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/html_parte1.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/html_parte2.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/html_parte3.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/javascript_1.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/javascript_2.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/javascript_3.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/javascript_4.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/javascript_5.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/react_1.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/react_2.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/ingles.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/src/assets/courses/algoritmo.JPG" class="d-block w-100 carousel__img" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
             </section>
         </main>
         <footer class="footer__container" data-footer>
             <h3 class="footer__title">&copy; 2022 William Spada</h3>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
         <script src="./src/index.js"></script>
     </body>
     </html>

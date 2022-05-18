@@ -9,13 +9,23 @@ function openMenuMobile(){
 
 function isModalOpen(){
     if(modalOpen === false){
+        isModeBlackOrWhite();
         toHideAllContentAndFooter();
         toShowHeaderMobile();
         modalOpen = true;
     }else{
+        isModeBlackOrWhite();
         toShowAllContentAndFooter();
         toHideHeaderMobile();
         modalOpen = false;
+    }
+}
+
+function isModeBlackOrWhite(){
+    if(modeBlackActive){
+        activeModeBlack();
+    }else{
+        activeModeWhite();
     }
 }
 
@@ -37,7 +47,6 @@ function toShowHeaderMobile(){
 function toChangeStyleSourceButtonClose(){
     const buttonMenu = document.querySelector('[data-menuButton]');
 
-    buttonMenu.setAttribute('style', 'transition: 3s');
     buttonMenu.src = "./src/assets/close.svg";
 }
 
@@ -60,7 +69,111 @@ function toHideHeaderMobile(){
 function toChangeStyleSourceButtonNormal(){
     const buttonMenu = document.querySelector('[data-menuButton]');
 
-    buttonMenu.setAttribute('style', 'transition: 3s');
     buttonMenu.src = "./src/assets/menu.svg";
 }
 
+const modePage1 = document.querySelector('[data-mode1]');
+const modePage2 = document.querySelector('[data-mode2]');
+modePage1.addEventListener('click', isModeBlackActive);
+modePage2.addEventListener('click', isModeBlackActive);
+let modeBlackActive = false;
+
+function isModeBlackActive(){
+    if(modeBlackActive){
+        activeModeWhite();
+        modeBlackActive = false;
+    }else{
+        activeModeBlack();
+        modeBlackActive = true;
+    }
+}
+
+function activeModeBlack(){
+    const body = document.querySelector('body');
+    const photoApresentation = document.querySelector('[data-photoApresentation]');
+    body.setAttribute('style', 'background-color: var(--colorBackgroundBlackModeView)');
+    photoApresentation.src = "./src/assets/image.svg";
+
+    toChangeColorToWhiteHeaderAndMainContent(); 
+}
+
+function toChangeColorToWhiteHeaderAndMainContent(){
+    const titleHeaderMobile = document.querySelector('[data-titleHeader1]');
+    const titleHeaderDesktop = document.querySelector('[data-titleHeader2]');
+    const mainContent = document.querySelector('[data-mainContent]');
+    
+    mainContent.setAttribute('style', 'color: var(--colorBackgroundCardsTechnologies)');
+    titleHeaderDesktop.setAttribute('style', 'color: var(--colorBackgroundCardsTechnologies)');
+    titleHeaderMobile.setAttribute('style', 'color: var(--colorBackgroundCardsTechnologies)');
+
+    toChangeColorBoxShadowModeBlack();
+    toChangeStyleSourceModePageBlackButton();
+}
+
+function  toChangeColorBoxShadowModeBlack(){
+    const photoApresentation = document.querySelector('[data-photoApresentation]');
+    const technologiesCards = document.querySelectorAll('.technologies__cards');
+    const projectCards = document.querySelectorAll('.projects__cards');
+
+    photoApresentation.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundCardsTechnologies)');
+    technologiesCards.forEach((item) => {
+        item.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundCardsTechnologies)');
+    });
+
+    projectCards.forEach((item) => {
+        item.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundCardsTechnologies)');
+    });
+}
+
+function toChangeStyleSourceModePageBlackButton(){
+    const modePage1 = document.querySelector('[data-mode1]');
+    const modePage2 = document.querySelector('[data-mode2]');
+
+    modePage1.src = "./src/assets/brightness-high.svg";
+    modePage2.src = "./src/assets/brightness-high.svg";
+}
+
+function activeModeWhite(){
+    const body = document.querySelector('body');
+    const photoApresentation = document.querySelector('[data-photoApresentation]');
+    body.setAttribute('style', 'background-color: var(--colorBackgroundWhiteModeView)');
+    photoApresentation.src = "./src/assets/blogging 1.svg";
+
+    toChangeColorToBlackHeaderAndMainContent(); 
+}
+
+function toChangeColorToBlackHeaderAndMainContent(){
+    const titleHeaderMobile = document.querySelector('[data-titleHeader1]');
+    const titleHeaderDesktop = document.querySelector('[data-titleHeader2]');
+    const mainContent = document.querySelector('[data-mainContent]');
+    
+    mainContent.setAttribute('style', 'color: var(--colorBackgroundBlackModeView)');
+    titleHeaderDesktop.setAttribute('style', 'color: var(--colorBackgroundBlackModeView)');
+    titleHeaderMobile.setAttribute('style', 'color: var(--colorBackgroundBlackModeView)');
+
+    toChangeColorBoxShadowModeWhite();
+    toChangeStyleSourceModePageWhiteButton();
+}
+
+function  toChangeColorBoxShadowModeWhite(){
+    const photoApresentation = document.querySelector('[data-photoApresentation]');
+    const technologiesCards = document.querySelectorAll('.technologies__cards');
+    const projectCards = document.querySelectorAll('.projects__cards');
+
+    photoApresentation.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundBlackModeView)');
+    technologiesCards.forEach((item) => {
+        item.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundBlackModeView)');
+    });
+
+    projectCards.forEach((item) => {
+        item.setAttribute('style', 'box-shadow: 0.2rem 0.2rem var(--colorBackgroundBlackModeView)');
+    });
+}
+
+function toChangeStyleSourceModePageWhiteButton(){
+    const modePage1 = document.querySelector('[data-mode1]');
+    const modePage2 = document.querySelector('[data-mode2]');
+
+    modePage1.src = "./src/assets/moon.svg";
+    modePage2.src = "./src/assets/moon.svg";
+}
