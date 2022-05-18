@@ -28,6 +28,17 @@
         display: none;
     }
 
+    .header__itens--list__itens:hover{
+        opacity: 0.3;
+        text-decoration: underline;
+        transition: 1s;
+    }
+
+    .header__itens--list:hover{
+        
+        transition: 1s;
+    }
+
     @media screen and (min-width: 720px){
         .header__container{
             display: none;
@@ -48,15 +59,20 @@
         }
 
         .header__itens--list__itens{
-            margin: 0 1.2em;
+            margin: 0 0.5em;
             font-weight: 600;
             color: var(--colorTextDetailTitle);
             cursor: pointer;
         }
-
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 1000px){
+        .header__title{
+            font-size: 1.5em;
+        }
+    }
+
+    @media screen and (min-width: 1000px){
         .header__itens--list__itens{
             font-size: 1.25em;
         }

@@ -14,6 +14,7 @@
         --colorBackgroundGradientSubtitleOne: #8907a3;
         --colorBackgroundGradientSubtitleTwo: #0013c0;
         --colorBackgroundCardsTechnologies: #DFDFDF;
+        --colorWhiteText: #ece7e7;
     }
 
     html{
@@ -32,6 +33,26 @@
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         background-color: var(--colorBackgroundWhiteModeView);
+    }
+
+    .header__mobile--open{
+        display: none;
+    }
+
+    .header__mobile--list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 3%;
+    }
+
+    .header__mobile--item{
+        border-bottom: 0.1em solid var(--colorBackgroundGradientSubtitleOne);
+        color: var(--colorTextDetailTitle);
+        margin: 1em 0;
+        font-weight: 500;
+        list-style: none;
+        font-size: 1.5em;
     }
 
     .main__content{

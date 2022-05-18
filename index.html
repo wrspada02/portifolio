@@ -23,22 +23,32 @@
             <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
             <div class="header__itens">
                 <img src="./src/assets/moon.svg" alt="Imagem da lua para exibicao do modo escuro">
-                <img class="header__button" src="./src/assets/menu.svg" alt="Botao hamburguer">
+                <img class="header__button" src="./src/assets/menu.svg" alt="Botao hamburguer" data-menuButton>
             </div>
         </header>
         <header class="header__container--desktop">
             <h1 class="header__title"><span class="header__title--detail">{</span>William<span class="header__title--detail">}</span></h1>
             <nav class="header__itens">
-                <ul class="header__itens--list">
+                <ul class="header__itens--list" data-headerList>
                     <li class="header__itens--list__itens">Sobre</li>
+                    <li class="header__itens--list__itens">Contato</li>
                     <li class="header__itens--list__itens">Tecnologias</li>
                     <li class="header__itens--list__itens">Projetos</li>
-                    <li class="header__itens--list__itens">Contato</li>
+                    <li class="header__itens--list__itens">Certificados</li>
                     <li class="header__itens--list__itens"><img src="./src/assets/moon.svg" alt=""></li>
                 </ul>
             </nav>
         </header>
-        <main class="main__content">
+        <nav class="header__mobile--open" data-headerMobile>
+            <ul class="header__mobile--list">
+                <li class="header__mobile--item">Sobre</li>
+                <li class="header__mobile--item">Contato</li>
+                <li class="header__mobile--item">Tecnologias</li>
+                <li class="header__mobile--item">Projetos</li>
+                <li class="header__mobile--item">Certificados</li>
+            </ul>
+        </nav>
+        <main class="main__content" data-mainContent>
             <section class="apresentation__container">
                 <div class="apresentation__content">
                     <h1 class="apresentation__title">Olá, eu sou<br> William Spada.</h1>
@@ -54,12 +64,39 @@
                 <img class="aboutMe__image" src="./src/assets/williamDev.jpg" alt="Imagem do autor para se apresentar ao leitor">
                 <div class="aboutMe__content">
                     <p class="aboutMe__text">Meu nome é William Rodrigues Spada, moro na cidade de Bragança Paulista e tenho 19 anos. 
-                        Atualmente estou cursando Engenharia da Computação.</p>
+                        Atualmente estou cursando Engenharia da Computação. Estou também cursando inglês online na 
+                        plataforma Busuu e possuo um nível intermediário fazendo conversação online com nativos na 
+                        plataforma Enligsh Live.</p>
+                    <p class="aboutMe__text">Trabalhei durante 2 anos como projetista mecânico, até Dezembro de 2021 
+                        e atualmente estou buscando uma oportunidade no mercado de trabalho da tecnologia.</p>
                     <p class="aboutMe__text">Possuo conhecimento na stack front-end com ReactJS e TypeScript, como também um básico conhecimento de back-end,
-                         criando implementações de rotas com express framework e CRUD com mongoDB utilizando o ORM "mongoose".</p>
+                         criando implementações de rotas com express framework e CRUD com mongoDB utilizando o ORM "mongoose".</p>       
                         </div>
             </section>
-            <button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" alt="Icone de fazer download"></button>
+            <a download href="./src/assets/brightness-high.svg"><button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" alt="Icone de fazer download"></button></a>
+            <h2 class="subtitle">Contato</h2>
+            <section class="contact__container">
+                <article class="contact__card">
+                    <a href="https://www.linkedin.com/in/william-rodrigues-spada-03b828192/"><img src="./src/assets/linkedin.svg" 
+                        alt="Imagem do logo do linkedin para redirecionar"></a>
+                    <span>Linkedin</span>
+                </article>
+                <article class="contact__card">
+                    <a href="https://github.com/wrspada02"><img src="./src/assets/github.svg" 
+                        alt="Imagem do logo do github para redirecionar"></a>
+                    <span>Github</span>
+                </article>
+                <article class="contact__card">
+                    <a href="https://contate.me/william-spada"><img src="./src/assets/whatsapp.svg" 
+                        alt="Imagem do logo do whatsapp para redirecionar"></a>
+                    <span>WhatsApp</span>
+                </article>
+                <article class="contact__card">
+                    <a href="mailto:williamrspada02@gmail.com"><img src="./src/assets/envelope.svg" 
+                        alt="Imagem do logo de e-mail para redirecionar"></a>
+                    <span>E-mail</span>
+                </article>
+            </section>
             <h2 class="subtitle">Tecnologias</h2>
             <section class="technologies__container">
                 <article class="technologies__cards">
@@ -185,27 +222,14 @@
                         alt="Imagem representando github para acessar o repositorio"></a>
                 </article>
             </section>
-            <h2 class="subtitle">Contato</h2>
-            <section class="contact__container">
-                <article class="contact__card">
-                    <a href="https://www.linkedin.com/in/william-rodrigues-spada-03b828192/"><img src="./src/assets/linkedin.svg" 
-                        alt="Imagem do logo do linkedin para redirecionar"></a>
-                    <span>Linkedin</span>
-                </article>
-                <article class="contact__card">
-                    <a href="https://github.com/wrspada02"><img src="./src/assets/github.svg" 
-                        alt="Imagem do logo do github para redirecionar"></a>
-                    <span>Github</span>
-                </article>
-                <article class="contact__card">
-                    <a href="https://contate.me/william-spada"><img src="./src/assets/whatsapp.svg" 
-                        alt="Imagem do logo do whatsapp para redirecionar"></a>
-                    <span>WhatsApp</span>
-                </article>
+            <h2 class="subtitle">Certificados</h2>
+            <section class="certificados__container">
+
             </section>
         </main>
-        <footer class="footer__container">
+        <footer class="footer__container" data-footer>
             <h3 class="footer__title">&copy; 2022 William Spada</h3>
         </footer>
+        <script src="./src/index.js"></script>
     </body>
     </html>
