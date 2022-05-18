@@ -3,13 +3,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+        text-align: justify;
     }
 
     .aboutMe__content{
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .aboutMe__image{
@@ -27,7 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        width: 50%;
+        margin: 2em auto;
     }
 
     @media screen and (min-width: 400px){
@@ -48,12 +47,11 @@
         }
 
         .aboutMe__text{
-            text-align: justify;
             margin-left: 1em;
         }
 
         .aboutMe__button{
-            width: 50%;
+            width: 30%;
         }
 
         .aboutMe__image{
@@ -63,18 +61,19 @@
     }
 
     @media screen and (min-width: 950px){
-        .aboutMe__button{
-            width: 32%;
-        }
 
         .aboutMe__image{
-            width: 30%;
+            width: 25%;
+        }
+
+        .aboutMe__button{
+            width: 20%;
         }
     }
 
     @media screen and (min-width: 1200px){
         .aboutMe__button{
-            width: 15%;
+            width: 10%;
         }
 
         .aboutMe__image{

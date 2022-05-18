@@ -55,3 +55,9 @@
         }
 
     }
+
+    @media screen and (min-width: 1200px){
+        .header__itens--list__itens{
+            font-size: 1.25em;
+        }
+    }

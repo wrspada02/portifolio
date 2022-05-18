@@ -46,6 +46,15 @@
     }
 
     .subtitle{
+        margin: 3rem 0;
+        background-image: linear-gradient(to left, var(--colorBackgroundGradientSubtitleOne), var(--colorBackgroundGradientSubtitleTwo));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+    }
+
+    .subtitle__aboutMe{
         margin: 1rem 0;
         background-image: linear-gradient(to left, var(--colorBackgroundGradientSubtitleOne), var(--colorBackgroundGradientSubtitleTwo));
         background-clip: text;
