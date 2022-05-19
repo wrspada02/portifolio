@@ -78,7 +78,8 @@ modePage2.addEventListener('click', isModeBlackActive);
 let modeBlackActive = false;
 
 function isModeBlackActive(){
-    isModalOpen();
+    toShowAllContentAndFooter();
+    toHideHeaderMobile();
     if(modeBlackActive){
         activeModeWhite();
         modeBlackActive = false;
