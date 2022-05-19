@@ -47,9 +47,8 @@
         transition: 0.5s;
     }
 
-    .header__itens--list:hover{
-        
-        transition: 1s;
+    .header__mobile--list{
+        animation: leftLetter 1s;
     }
 
     @media screen and (min-width: 720px){
