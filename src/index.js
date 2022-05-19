@@ -184,13 +184,13 @@ headerItensListDesktop.forEach((item) => {
         if('Sobre' === item.innerHTML){
             window.scrollTo(0, 100);
         }else if('Contato' === item.innerHTML){
-            window.scrollTo(0,650);
+            window.scrollTo(0,800);
         }else if('Tecnologias' === item.innerHTML){
             window.scrollTo(0, 1150);
         }else if('Projetos' === item.innerHTML){
-            window.scrollTo(0, 1600);
+            window.scrollTo(0, 1700);
         }else if('Certificados' === item.innerHTML){
-            window.scrollTo(0, 3200);
+            window.scrollTo(0, 5000);
         }
     });
 });
