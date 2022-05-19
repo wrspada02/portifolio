@@ -16,6 +16,11 @@
         --colorBackgroundCardsTechnologies: #DFDFDF;
         --colorWhiteText: #ece7e7;
         --colorBackgroundContactCard: #a216ffdc;
+        --colorBackgroundContactImage: #999595;
+        --colorBlue: #5770ff;
+        --colorGreen: #59df4d;
+        --colorGray: #b18b8b;
+        --colorCardHover: #903fb6;
     }
 
     html{

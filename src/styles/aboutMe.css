@@ -15,11 +15,13 @@
         width: 60%;
         border-radius: 50%;
         margin-bottom: 1rem;
+        animation: right 1s;
     }
 
     .aboutMe__text{
         margin: 1rem 0;
         font-weight: 400;
+        animation: rightDownToCenter 1s;
     }
 
     .aboutMe__button{
@@ -27,6 +29,12 @@
         align-items: center;
         justify-content: space-evenly;
         margin: 2em auto;
+    }
+
+    .aboutMe__button:hover{
+        opacity: 0.3;
+        transform: translateX(1em) translateY(0.5em) scale(1.2);
+        transition: 0.5s;
     }
 
     @media screen and (min-width: 400px){
@@ -37,7 +45,7 @@
 
     @media screen and (min-width: 550px){
         .aboutMe__button{
-            width: 28%;
+            width: 32%;
         }
     }
 
@@ -51,7 +59,7 @@
         }
 
         .aboutMe__button{
-            width: 20%;
+            width: 25%;
         }
 
         .aboutMe__image{
@@ -73,7 +81,7 @@
 
     @media screen and (min-width: 1200px){
         .aboutMe__button{
-            width: 10%;
+            width: 20%;
         }
 
         .aboutMe__image{
@@ -84,4 +92,10 @@
             font-size: 1.2em;
         }
 
+    }
+
+    @media screen and (min-width: 1400px){
+        .aboutMe__button{
+            width: 15%;
+        }
     }

@@ -7,6 +7,7 @@
     }
 
     .technologies__cards{
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         width: 60%;
@@ -16,6 +17,15 @@
         background-color: transparent;
         border-radius: 1em;
         box-shadow: 0.125em 0.125em black;
+        animation: upLetter 1s;
+    }
+
+    .technologies__cards:hover{
+        transform: translateX(1.1em) translateY(1.1em) scale(1);
+        box-shadow: 0.8em 0.8em black;
+        background-color: var(--colorCardHover);
+        color: var(--colorBackgroundWhiteModeView);
+        transition: 0.5s;
     }
 
     .technologies__cards--image{

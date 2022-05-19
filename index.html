@@ -10,6 +10,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
         </style>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="icon" type="image/svg+xml" href="./src/assets/incognito.svg">
         <link rel="stylesheet" href="./src/styles/global.css">
         <link rel="stylesheet" href="./src/styles/header.css">
         <link rel="stylesheet" href="./src/styles/apresentation.css">
@@ -19,6 +20,7 @@
         <link rel="stylesheet" href="./src/styles/contact.css">
         <link rel="stylesheet" href="./src/styles/footer.css">
         <link rel="stylesheet" href="./src/styles/certificate.css">
+        <link rel="stylesheet" href="./src/styles/animation.css">
     </head>
     <body>
         <header class="header__container">
@@ -70,36 +72,36 @@
                     <p class="aboutMe__text">Meu nome é William Rodrigues Spada, moro na cidade de Bragança Paulista e tenho 19 anos. 
                         Atualmente estou cursando Engenharia da Computação. Estou também cursando inglês online na 
                         plataforma Busuu e possuo um nível intermediário fazendo conversação online com nativos na 
-                        plataforma Enligsh Live.</p>
+                        plataforma English Live.</p>
                     <p class="aboutMe__text">Trabalhei durante 2 anos como projetista mecânico, até Dezembro de 2021 
                         e atualmente estou buscando uma oportunidade no mercado de trabalho da tecnologia.</p>
                     <p class="aboutMe__text">Possuo conhecimento na stack front-end com ReactJS e TypeScript, como também um básico conhecimento de back-end,
                          criando implementações de rotas com express framework e CRUD com mongoDB utilizando o ORM "mongoose".</p>       
                         </div>
             </section>
-            <a download href="./src/assets/brightness-high.svg"><button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" 
+            <a download href="./src/assets/curriculum/Resume William 2022.pdf"><button class="aboutMe__button button">Baixar CV <img src="./src/assets/download.svg" 
                 alt="Icone de fazer download"></button></a>
             <h2 class="subtitle">Contato</h2>
             <section class="contact__container">
                 <article class="contact__card">
-                    <a href="https://www.linkedin.com/in/william-rodrigues-spada-03b828192/"><img src="./src/assets/linkedin.svg" 
-                        alt="Imagem do logo do linkedin para redirecionar"></a>
-                    <span>Linkedin</span>
+                    <a href="https://www.linkedin.com/in/william-rodrigues-spada-03b828192/"><img class="contact__card--img"
+                        src="./src/assets/linkedin.svg" alt="Imagem do logo do linkedin para redirecionar" id="linkedin"></a>
+                    <span class="contact__title">Linkedin</span>
                 </article>
                 <article class="contact__card">
-                    <a href="https://github.com/wrspada02"><img class="test__button" src="./src/assets/github.svg" 
-                        alt="Imagem do logo do github para redirecionar"></a>
-                    <span>Github</span>
+                    <a href="https://github.com/wrspada02"><img class="contact__card--img" src="./src/assets/github.svg" 
+                        alt="Imagem do logo do github para redirecionar" id="github"></a>
+                    <span class="contact__title">Github</span>
                 </article>
                 <article class="contact__card">
-                    <a href="https://contate.me/william-spada"><img src="./src/assets/whatsapp.svg" 
-                        alt="Imagem do logo do whatsapp para redirecionar"></a>
-                    <span>WhatsApp</span>
+                    <a href="https://contate.me/william-spada"><img class="contact__card--img" src="./src/assets/whatsapp.svg" 
+                        alt="Imagem do logo do whatsapp para redirecionar" id="whatsapp"></a>
+                    <span class="contact__title">WhatsApp</span>
                 </article>
                 <article class="contact__card">
-                    <a href="mailto:williamrspada02@gmail.com"><img src="./src/assets/envelope.svg" 
-                        alt="Imagem do logo de e-mail para redirecionar"></a>
-                    <span>E-mail</span>
+                    <a href="mailto:williamrspada02@gmail.com"><img class="contact__card--img" src="./src/assets/envelope.svg" 
+                        alt="Imagem do logo de e-mail para redirecionar" id="email"></a>
+                    <span class="contact__title">E-mail</span>
                 </article>
             </section>
             <h2 class="subtitle">Tecnologias</h2>
@@ -132,7 +134,7 @@
                 <article class="technologies__cards">
                     <img class="technologies__cards--image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg" 
                     alt="Imagem framework Express JS">
-                    <span class="technologies__cards--title">Express JS</span>
+                    <span class="technologies__cards--title">ExpressJS</span>
                 </article>
                 <article class="technologies__cards">
                     <img class="technologies__cards--image" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" 
@@ -249,25 +251,25 @@
                 </article>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="./src/assets/courses/css_grid.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="./src/assets/courses/css_1.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="./src/assets/courses/bootstrap.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="./src/assets/courses/css_2.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/src/assets/courses/css_flexbox.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="/src/assets/courses/css_3.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/src/assets/courses/css_layouts_responsivos.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="/src/assets/courses/css_4.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/src/assets/courses/html_parte1.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="/src/assets/courses/html_1.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/src/assets/courses/html_parte2.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="/src/assets/courses/html_2.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
-                    <img src="/src/assets/courses/html_parte3.JPG" class="d-block w-100 carousel__img" alt="...">
+                    <img src="/src/assets/courses/html_3.JPG" class="d-block w-100 carousel__img" alt="...">
                   </div>
                   <div class="carousel-item">
                     <img src="/src/assets/courses/javascript_1.JPG" class="d-block w-100 carousel__img" alt="...">

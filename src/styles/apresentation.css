@@ -10,11 +10,13 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: leftLetter 1s;
     }
 
     .apresentation__subtitle{
         font-weight: 500;
         margin: 0.5rem 0;
+        animation: downLetter 1s;
     }
 
     .apresentation__subtitle--welcome{
@@ -24,6 +26,7 @@
 
     .apresentation__subtitle--welcome, .apresentation__littleAboutMe{
         font-weight: 400;
+        animation: upAndDownLetter 1s;
     }
 
     .apresentation__photo{
@@ -32,6 +35,8 @@
         border: 0.1em solid black;
         border-radius: 1em;
         box-shadow: 0.2rem 0.2rem black;
+        animation: leftLetter 1s;
+        max-height: 300px;
     }
 
     @media screen and (min-width: 720px) {

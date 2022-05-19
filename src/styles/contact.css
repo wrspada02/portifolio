@@ -5,6 +5,7 @@
         justify-items: center;
         flex-wrap: wrap;
         margin: 2em 0;
+        animation: right 1s;
     }
 
     .contact__card{
@@ -12,9 +13,48 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0.2em 1em;
         border-radius: 0.3em;
-        background-color: var(--colorBackgroundContactCard);
+    }
+
+    .contact__card--img{
+        padding: 0.2em;
+        background-color: var(--colorBackgroundContactImage);
+        border-radius: 50%;
+        padding: 0.5em;
+    }
+
+    .contact__card--img:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+
+    .contact__title{
+        font-weight: 500;
+    }
+
+    .contact__title:hover{
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+
+    #linkedin:hover{
+        background-color: var(--colorBlue);
+        transition: 0.5s;
+    }
+
+    #github:hover{
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+    #whatsapp:hover{
+        background-color: var(--colorGreen);
+        transition: 0.5s;
+    }
+
+    #email:hover{
+        background-color: var(--colorGray);
+        transition: 0.5s;
     }
 
     @media screen and (min-width: 500px){

@@ -9,14 +9,13 @@ function openMenuMobile(){
 
 function isModalOpen(){
     if(modalOpen === false){
-        isModeBlackOrWhite();
         toHideAllContentAndFooter();
         toShowHeaderMobile();
         modalOpen = true;
     }else{
-        isModeBlackOrWhite();
         toShowAllContentAndFooter();
         toHideHeaderMobile();
+        isModeBlackOrWhite();
         modalOpen = false;
     }
 }
@@ -177,3 +176,39 @@ function toChangeStyleSourceModePageWhiteButton(){
     modePage1.src = "./src/assets/moon.svg";
     modePage2.src = "./src/assets/moon.svg";
 }
+
+
+const headerItensListDesktop = document.querySelectorAll('.header__itens--list__itens');
+headerItensListDesktop.forEach((item) => {
+    item.addEventListener('click', () => {
+        if('Sobre' === item.innerHTML){
+            window.scrollTo(0, 100);
+        }else if('Contato' === item.innerHTML){
+            window.scrollTo(0,650);
+        }else if('Tecnologias' === item.innerHTML){
+            window.scrollTo(0, 1150);
+        }else if('Projetos' === item.innerHTML){
+            window.scrollTo(0, 1600);
+        }else if('Certificados' === item.innerHTML){
+            window.scrollTo(0, 3200);
+        }
+    });
+});
+
+const headerItensListMobile = document.querySelectorAll('.header__mobile--item');
+headerItensListMobile.forEach((item) => {
+    item.addEventListener('click', () => {
+        isModalOpen();
+        if('Sobre' === item.innerHTML){
+            window.scrollTo(0, 500);
+        }else if('Contato' === item.innerHTML){
+            window.scrollTo(0, 1200);
+        }else if('Tecnologias' === item.innerHTML){
+            window.scrollTo(0, 1750);
+        }else if('Projetos' === item.innerHTML){
+            window.scrollTo(0, 3000);
+        }else if('Certificados' === item.innerHTML){
+            window.scrollTo(0, 6000);
+        }
+    });
+});
