@@ -37,10 +37,10 @@ function toHideAllContentAndFooter(){
 }
 
 function toShowHeaderMobile(){
-        const menuMobile = document.querySelector('[data-headerMobile]');
-        menuMobile.setAttribute('style', 'display: initial');
+    const menuMobile = document.querySelector('[data-headerMobile]');
+    menuMobile.setAttribute('style', 'display: initial');
     
-        toChangeStyleSourceButtonClose();
+    toChangeStyleSourceButtonClose();
 }
 
 function toChangeStyleSourceButtonClose(){
@@ -78,6 +78,7 @@ modePage2.addEventListener('click', isModeBlackActive);
 let modeBlackActive = false;
 
 function isModeBlackActive(){
+    isModalOpen();
     if(modeBlackActive){
         activeModeWhite();
         modeBlackActive = false;
