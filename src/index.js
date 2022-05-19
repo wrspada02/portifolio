@@ -186,7 +186,7 @@ headerItensListDesktop.forEach((item) => {
         }else if('Contato' === item.innerHTML){
             window.scrollTo(0,800);
         }else if('Tecnologias' === item.innerHTML){
-            window.scrollTo(0, 1150);
+            window.scrollTo(0, 1000);
         }else if('Projetos' === item.innerHTML){
             window.scrollTo(0, 1700);
         }else if('Certificados' === item.innerHTML){
